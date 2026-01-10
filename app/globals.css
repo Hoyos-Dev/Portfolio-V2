@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Neobrutalism Colors */
+  --neo-coral: #FF6B5B;
+  --neo-orange: #FFB84D;
+  --neo-blue: #6B9EFF;
+  --neo-black: #1A1A1A;
+  --neo-white: #FFFEF9;
+  --neo-cream: #FFF9F0;
+
+  /* Backgrounds */
+  --background: var(--neo-white);
+  --foreground: var(--neo-black);
+
+  /* Neobrutalism Shadows */
+  --shadow-brutalist: 6px 6px 0px var(--neo-black);
+  --shadow-brutalist-lg: 8px 8px 0px var(--neo-black);
+  --shadow-brutalist-sm: 4px 4px 0px var(--neo-black);
+  --shadow-hover: 3px 3px 0px var(--neo-black);
+}
+
+@theme inline {
+  /* Colors */
+  --color-neo-coral: var(--neo-coral);
+  --color-neo-orange: var(--neo-orange);
+  --color-neo-blue: var(--neo-blue);
+  --color-neo-black: var(--neo-black);
+  --color-neo-white: var(--neo-white);
+  --color-neo-cream: var(--neo-cream);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Borders */
+  --radius-neo: 0px;
+  --border-neo: 4px solid var(--neo-black);
+  --border-neo-thick: 5px solid var(--neo-black);
+
+  /* Shadows */
+  --shadow-neo: var(--shadow-brutalist);
+  --shadow-neo-lg: var(--shadow-brutalist-lg);
+  --shadow-neo-sm: var(--shadow-brutalist-sm);
+  --shadow-neo-hover: var(--shadow-hover);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--neo-white);
+  color: var(--neo-black);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Neobrutalism Utility Classes */
+.neo-border {
+  border: 4px solid var(--neo-black);
+}
+
+.neo-border-thick {
+  border: 5px solid var(--neo-black);
+}
+
+.neo-shadow {
+  box-shadow: 6px 6px 0px var(--neo-black);
+}
+
+.neo-shadow-lg {
+  box-shadow: 8px 8px 0px var(--neo-black);
+}
+
+.neo-shadow-sm {
+  box-shadow: 4px 4px 0px var(--neo-black);
+}
+
+.neo-shadow-hover {
+  box-shadow: 3px 3px 0px var(--neo-black);
+}
+
+.neo-shadow-none {
+  box-shadow: none;
+}
+
+/* Hover transitions for neobrutalism */
+.neo-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.neo-transition:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px var(--neo-black);
+}
+
+/* Button base styles */
+.btn-neo {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  padding: 12px 24px;
+  border: 4px solid var(--neo-black);
+  box-shadow: 6px 6px 0px var(--neo-black);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--neo-white);
+  color: var(--neo-black);
+}
+
+.btn-neo:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px var(--neo-black);
+}
+
+.btn-neo:active {
+  transform: translate(6px, 6px);
+  box-shadow: none;
+}
+
+/* Container */
+.container-neo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container-neo {
+    padding: 0 48px;
+  }
+}
