@@ -156,3 +156,36 @@ h6 {
     padding: 0 48px;
   }
 }
+
+/* Tech Section Styles */
+.tech-section {
+  padding: 80px 0 80px 0;
+  background-color: var(--neo-white);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Reduced gap to fit on one line */
+  max-width: 1400px;
+  /* Increased max-width */
+  width: 100%;
+  padding: 0 24px;
+}
+
+.tech-icon {
+  font-size: 50px;
+  color: var(--neo-black);
+  transition: all 0.2s ease-in-out;
+  line-height: 1;
+}
+
+.tech-icon:hover {
+  transform: translateY(-8px);
+  color: var(--neo-orange);
+}

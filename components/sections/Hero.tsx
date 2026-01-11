@@ -1,18 +1,17 @@
 'use client';
 
-import React from 'react';
 import { Briefcase, ExternalLink, Download } from 'lucide-react';
 import Button from '../ui/Button';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-neo-white">
+        <section className="bg-neo-white pt-2">
             {/* Navigation */}
             <nav className="container-neo py-6">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                     {/* Logo */}
                     <div className="text-2xl font-bold">
-                        Sandra Matthews
+                        Hoyos Christian
                     </div>
 
                     {/* Menu */}
@@ -45,9 +44,9 @@ export default function Hero() {
 
                         {/* Main Heading */}
                         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-none">
-                            Sandra
+                            Hoyos
                             <br />
-                            Matthews
+                            Christian
                         </h1>
 
                         {/* Subheading */}
@@ -76,17 +75,12 @@ export default function Hero() {
 
                     {/* Right Column - Character Illustration */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-full max-w-md aspect-square flex items-center justify-center">
-                            {/* Placeholder for character illustration */}
-                            <div className="w-full h-full neo-border neo-shadow-lg bg-neo-white flex items-center justify-center">
-                                <div className="text-center p-8">
-                                    <div className="text-8xl mb-4">👋</div>
-                                    <p className="text-sm font-medium">Character Illustration</p>
-                                    <p className="text-xs text-neo-black/60 mt-2">
-                                        (Placeholder - will be replaced with actual illustration)
-                                    </p>
-                                </div>
-                            </div>
+                        <div className="relative w-full max-w-4xl aspect-square flex items-center justify-center">
+                            <img
+                                src="/images/hoyos-port1.png"
+                                alt="Character Illustration"
+                                className="w-full h-full object-contain"
+                            />
                         </div>
                     </div>
                 </div>
