@@ -5,23 +5,23 @@ export default function Projects() {
     const projects = [
         {
             id: 1,
-            title: 'Cookies Oatmeal',
-            description: 'Developing cohesive visual identities that communicate brand values and resonate with target audiences across various mediums.',
-            image: '/images/project-cookies.jpg',
+            title: 'UI Elements',
+            description: 'A component portal that works as a digital library, centralizing reusable web design and development elements. It helps maintain consistency, speeds up workflows, and supports scalable and efficient project development.',
+            image: '/images/UIElements.png',
             link: '#',
         },
         {
             id: 2,
-            title: 'Learning by Helping',
-            description: 'Developing cohesive visual identities that communicate brand values and resonate with target audiences across various mediums.',
-            image: '/images/project-learning.jpg',
+            title: 'Giveaways',
+            description: 'A customizable sweepstakes platform that allows you to create dynamic sweepstakes from lists of people, with simultaneous or individual sweepstakes options, custom backgrounds, and interactivity adaptable to any need.',
+            image: '/images/giveaways.png',
             link: '#',
         },
         {
             id: 3,
-            title: 'Mayawell Soda',
-            description: 'Developing cohesive visual identities that communicate brand values and resonate with target audiences across various mediums.',
-            image: '/images/project-mayawell.jpg',
+            title: 'Portal PUA',
+            description: 'Visual and functional refactoring of the PAU portal, aimed at modernizing the user interface (UI) and optimizing the user experience (UX); for reasons of privacy and confidentiality, it is not possible to share additional information about this project.',
+            image: '/images/PAU.jpg',
             link: '#',
         },
     ];

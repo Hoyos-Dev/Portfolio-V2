@@ -17,12 +17,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sandra Matthews - Portfolio",
+  title: "Hoyos Christian - Portfolio",
   description: "Crafting captivating designs that speak volumes. Elevating your brand's design presence with creativity and precision.",
   keywords: ["design", "portfolio", "creative", "branding", "UI/UX"],
-  authors: [{ name: "Sandra Matthews" }],
+  authors: [{ name: "Hoyos Christian" }],
   openGraph: {
-    title: "Sandra Matthews - Portfolio",
+    title: "Hoyos Christian - Portfolio",
     description: "Crafting captivating designs that speak volumes.",
     type: "website",
   },

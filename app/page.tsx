@@ -1,7 +1,7 @@
 import Hero from '@/components/sections/Hero';
 import TechStack from '@/components/sections/TechStack';
 import Projects from '@/components/sections/Projects';
-import Newsletter from '@/components/sections/Newsletter';
+import Studies from '@/components/sections/Studies';
 import Footer from '@/components/sections/Footer';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <Projects />
-      <Newsletter />
+      <Studies />
       <Footer />
     </main>
   );

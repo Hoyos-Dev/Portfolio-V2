@@ -5,13 +5,13 @@ import Button from '../ui/Button';
 
 export default function Hero() {
     return (
-        <section className="bg-neo-white pt-2">
+        <section className="bg-neo-white" style={{ paddingTop: '15px' }}>
             {/* Navigation */}
-            <nav className="container-neo py-6">
+            <nav className="container-neo" style={{ paddingTop: '16px', paddingBottom: '16px' }}>
                 <div className="flex items-center justify-between flex-wrap gap-4">
                     {/* Logo */}
                     <div className="text-2xl font-bold">
-                        Hoyos Christian
+                        {/* Hoyos Christian */}
                     </div>
 
                     {/* Menu */}
@@ -50,12 +50,12 @@ export default function Hero() {
                         </h1>
 
                         {/* Subheading */}
-                        <p className="text-xl md:text-2xl leading-relaxed">
-                            I <span className="bg-neo-orange px-2 font-bold">scribble</span> on paper and help brands to create designs.
+                        <p className="text-xl md:text-2xl leading-relaxed max-w-2xl">
+                            <span className="bg-neo-orange px-2 font-bold">Front-end Developer</span> focused on clean code and functional design; specialized in modern, scalable, and performance-driven interfaces.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex gap-4 flex-wrap pt-4">
+                        <div className="flex gap-4 flex-wrap" style={{ marginTop: '40px' }}>
                             <Button
                                 variant="primary"
                                 icon={Briefcase}
@@ -75,11 +75,19 @@ export default function Hero() {
 
                     {/* Right Column - Character Illustration */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-full max-w-4xl aspect-square flex items-center justify-center">
+                        <div
+                            className="relative flex items-center justify-center"
+                            style={{
+                                width: '175%',
+                                marginRight: '-60px',
+                                transform: 'translateX(-20px)'
+                            }}
+                        >
                             <img
                                 src="/images/hoyos-port1.png"
                                 alt="Character Illustration"
-                                className="w-full h-full object-contain"
+                                className="h-auto object-contain"
+                                style={{ width: '100%', maxWidth: 'none' }}
                             />
                         </div>
                     </div>

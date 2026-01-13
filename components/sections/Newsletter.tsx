@@ -10,7 +10,7 @@ export default function Newsletter() {
     };
 
     return (
-        <section className="py-20 bg-neo-white">
+        <section className="bg-neo-white" style={{ paddingTop: '60px', paddingBottom: '80px' }}>
             <div className="container-neo">
                 <div className="space-y-6">
                     <SubscribeBox variant="coral" onSubmit={handleSubscribe} />
